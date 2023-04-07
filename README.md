@@ -23,11 +23,11 @@ Here are links to install Linux in a virtual environment using freely downloadab
 https://itsfoss.com/install-linux-in-virtualbox/
 https://blog.storagecraft.com/the-dead-simple-guide-to-installing-a-linux-virtual-machine-on-windows/
 
-Here are links to install Linux on a stand-alone desktop/laptop:
+- Here are links to install Linux on a stand-alone desktop/laptop:
 https://www.hellotech.com/guide/for/how-to-install-linux-on-windows-10
 https://www.alphr.com/operating-systems/1000061/how-to-install-ubuntu-run-linux-on-your-laptop-or-pc/
 
-Here are links to learn Linux and the Shell:
+- Here are links to learn Linux and the Shell:
 https://www.guru99.com/introduction-linux.html
 https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-basics
 
