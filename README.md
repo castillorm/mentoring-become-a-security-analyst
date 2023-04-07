@@ -1,6 +1,3 @@
-# mentoring-become-a-security-analyst
-This repo provides a compilation of notes on suggested pre-mentoring materials.
-
 # Roadmap to Becoming a Security Analyst
 
 This repo provides a compilation of notes on suggested pre-mentoring materials and suggested paths to becoming a security analyst.
