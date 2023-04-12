@@ -8,11 +8,15 @@ https://www.isc2.org/certified-in-cybersecurity
 
 - Link to the Google IT Certification Coursera course.  This course provides a great introduction to the basic concepts needed to work in a commercial IT environment --> https://www.coursera.org/professional-certificates/google-it-automation
 
-- TCP/IP Networking.  You should get a working understanding of IP v4 and TCP/IP networking (e.g. how an IP is assigned via DHCP, or what is a subnet?).  Here are links to tutorials/articles to get you started:
+- TCP/IP Networking.  You should get a working understanding of IP v4 and TCP/IP networking (e.g. how an IP is assigned via DHCP, or what is a subnet?).  
+- Here are links to YouTube videos tutorials on TCP/IP networking:
+https://www.youtube.com/playlist?list=PLBbU9-SUUCwVmwRswAHdqoJw-D2WeD9CN
+https://www.professormesser.com/network-plus/n10-005/free-network-plus/
+- Here are links to tutorials/articles to get you started:
 https://www.jameco.com/Jameco/Products/ProdDS/320733%20(TCP%20IP)%20Intro.pdf
 https://www.ece.uvic.ca/~itraore/elec567-13/notes/dist-03-4.pdf
-https://www.redbooks.ibm.com/pubs/pdfs/redbooks/gg243376.pdf
-Here are links to get started with the networking tool NMAP:
+https://www.redbooks.ibm.com/redbooks/pdfs/gg243376.pdf
+- Here are links to get started with the networking tool NMAP:
 http://scitechconnect.elsevier.com/wp-content/uploads/2013/09/Introducing-Nmap.pdf
 
 - Linux Operating System.  You should get a working understanding of the Linux shell by either installing Linux on a laptop/desktop or running Linux on a virtual machine.
