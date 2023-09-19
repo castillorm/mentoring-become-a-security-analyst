@@ -2,7 +2,7 @@
 
 In this video blog, I am giving my understanding of September 19, 2023 of what "Threat Modeling" and "Attack Path Mapping" mean to me as a defender of a cloud native AWS environment.
 
-## Definition of Threat Modling (source ChatGPT 3.5)
+## Definition of Threat Modeling (source ChatGPT 3.5)
 Threat modeling is a structured and systematic approach used in cybersecurity to identify, evaluate, and mitigate potential security threats and vulnerabilities within a system, application, or network. It involves the following key steps:
 
 1. **Asset Identification**: Identify and define the valuable assets or components within the system that need protection, such as data, software, hardware, and network resources.
