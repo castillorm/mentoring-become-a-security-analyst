@@ -1,4 +1,4 @@
-# Defining Threat Modeling and Attack Path Mapping
+# Episode 2 - Defining Threat Modeling and Attack Path Mapping
 
 In this video blog, I am giving my understanding of September 19, 2023 of what "Threat Modeling" and "Attack Path Mapping" mean to me as a defender of a cloud native AWS environment.
 
