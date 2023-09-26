@@ -46,10 +46,4 @@ Here are the key steps involved in attack path mapping:
 
 Attack path mapping helps organizations proactively identify and address security weaknesses, making it an essential part of overall cybersecurity risk management. It allows security professionals to prioritize their efforts and resources on the most critical areas to protect against potential attacks.
 
-## My Videos
 
-- Follow my YouTube channel for videos on this subject. 
-- https://youtube.com/playlist?list=PLpF_8NEH9fv584-JzS5lnGSgZ6g9TgKoF&si=xu_MC_6VkPEAShdt
-
-- Follow my Tiktok account for videos on this subject. 
-- https://www.tiktok.com/@castillo_rod?lang=en
