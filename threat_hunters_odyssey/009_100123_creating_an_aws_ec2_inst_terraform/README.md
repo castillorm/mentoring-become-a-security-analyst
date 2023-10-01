@@ -34,13 +34,47 @@ Are you ready to dive into the world of detection engineering? Welcome to Part 1
 
 #### **Step 3: Install AWS CLI**
 
-1. **Install AWS CLI**: Open your terminal on your Mac and run the following command to install the AWS Command Line Interface (CLI):
+Certainly! Here are step-by-step instructions for installing the AWS CLI on macOS using the command line:
 
-   ```bash
-   pip install awscli
+1. **Download AWS CLI Package:**
+   
+   Open your terminal and use the `curl` command to download the AWS CLI package. This command retrieves the package from the AWS website and saves it as "AWSCLIV2.pkg" in the current directory.
+
+   ```shell
+   $ curl "https://awscli.amazonaws.com/AWSCLIV2.pkg" -o "AWSCLIV2.pkg"
    ```
 
-2. **Configure AWS CLI**: Configure the AWS CLI with your IAM user's access key and secret key by running:
+2. **Install AWS CLI:**
+   
+   Now, run the macOS installer program, specifying the downloaded `.pkg` file as the source. Use the `-pkg` parameter to specify the name of the package to install, and the `-target /` parameter to specify the drive to install the package to. The AWS CLI files will be installed to `/usr/local/aws-cli`, and a symlink will be automatically created in `/usr/local/bin`. You need to include `sudo` in the command to grant write permissions to those folders.
+
+   ```shell
+   $ sudo installer -pkg ./AWSCLIV2.pkg -target /
+   ```
+
+3. **Verification:**
+   
+   After the installation is complete, you can verify that the AWS CLI is properly installed and accessible in your terminal. Use the following commands:
+
+   - To check the location of the AWS CLI executable:
+
+     ```shell
+     $ which aws
+     ```
+
+     It should return `/usr/local/bin/aws`.
+
+   - To check the AWS CLI version:
+
+     ```shell
+     $ aws --version
+     ```
+
+     You should see the AWS CLI version information displayed.
+
+If the `aws` command cannot be found, you might need to restart your terminal or follow the troubleshooting steps outlined in the [official AWS CLI installation documentation](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+
+4. **Configure AWS CLI**: Configure the AWS CLI with your IAM user's access key and secret key by running:
 
    ```bash
    aws configure
