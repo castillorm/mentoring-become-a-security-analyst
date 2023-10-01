@@ -1,4 +1,4 @@
-# Episode 5 - Creating an AWS EC2 Instance with Terraform | AWS EC2 Tutorial (Part 1)
+# Episode 5 - Creating an AWS EC2 Instance with Terraform | Elastic Security POC (Part 1)
 
 Are you ready to dive into the world of detection engineering? Welcome to Part 1 of our Elastic proof of concept, where we'll walk you through setting up your AWS EC2 instance using Terraform. This step-by-step tutorial is beginner-friendly, assuming only basic Unix command-line experience. By the end of this post, you'll have your AWS account, a working Terraform setup, and a running EC2 instance.
 
