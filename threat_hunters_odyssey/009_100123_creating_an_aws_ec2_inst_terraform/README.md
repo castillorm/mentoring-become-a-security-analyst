@@ -135,8 +135,6 @@ output "instance_ip" {
 
    Replace `/path/to/your/private-key.pem` with the path to your private key file and `<instance-public-ip>` with your EC2 instance's public IP address.
 
-### **Step 7: Terminate Your EC2 Instance (When Done)**
-
 These steps should help you create a basic Amazon Linux EC2 instance using Terraform and connect to it over SSH. Make sure to replace the placeholders with your actual AWS and SSH key pair information.
 
 Now you have the tools you need to launch your EC2 instance using Terraform. In Part 2 of this series, we'll guide you through installing an Elastic agent and getting the EC2 instance protected by Elastic.
