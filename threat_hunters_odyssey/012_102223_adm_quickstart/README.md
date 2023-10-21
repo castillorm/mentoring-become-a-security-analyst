@@ -1,53 +1,69 @@
-# Episode 7 - ADM Tool Quickstart
+# Episode 7 - Quickstart Guide: Installing and Validating the "Attack-Defense Modeling CLI Tool" by Vinay Venkatesh
 
-TBD
+**Introduction:**
+In the realm of cybersecurity and threat modeling, having the right tools at your disposal is essential. Vinay Venkatesh's "Attack-Defense Modeling CLI Tool" (ADM CLI Tool) is a powerful open-source command-line utility designed to process .adm files, adhering to attack-defense model language specifications. In this quickstart guide, we will walk you through the process of installing this valuable tool and validating its installation. Whether you're a seasoned cybersecurity professional or just starting in the field, this tool can streamline your threat modeling efforts.
 
-### **Prerequisites**
+**Prerequisites:**
+Before diving into the installation process, ensure that you meet the following prerequisites:
 
-Before we dive into the installation, let's ensure we have everything we need:
+- Administrator access on your laptop or desktop.
+- Go programming language installed (download [here](https://golang.org/dl/)).
+- Make utility installed (`make -version` to check).
+- Git installed and a GitHub ID ready.
+- Graphviz installed (use `brew install graphviz` for macOS).
 
-**1. go**: .
+**Installation Steps:**
 
-**2. Make**: .
+1. **Create a Working Directory:**
+   Start by creating a directory in your working or "dev" folder, where you'll set up the ADM CLI Tool.
 
-**3. GitHub Account**: .
+2. **Clone the ADM Repository:**
+   Perform a Git clone of the ADM repository from GitHub using the following command:
+   ```
+   git clone git@github.com:vinayprograms/adm.git
+   ```
 
+3. **Change to the "adm" Directory:**
+   Navigate into the "adm" directory that you just cloned:
+   ```
+   cd adm
+   ```
 
-### **Installation Steps**
+4. **Build the ADM CLI Tool:**
+   Run the following command to build the ADM CLI Tool. This will create an "adm" binary in the "bin" directory:
+   ```
+   make build
+   ```
 
-Let's proceed with the installation:
+5. **Verify Installation:**
+   Confirm that the ADM CLI Tool is built correctly by executing it:
+   ```
+   ./bin/adm
+   ```
 
-**Step 1: Access Fleet in Kibana**
-   
-   - Open Kibana and navigate to Fleet > Agents. Click on "Add agent."
+**Validation:**
+To validate that the ADM CLI Tool can parse a file, use the following command:
+```
+./bin/adm stat -a tests/examples/oauth/secrets-keys.adm
+```
+This will display information about the attacks contained in the specified .adm file.
 
-**Step 2: Agent Policy Selection**
-   
-   - In the "Add agent" flyout, select an existing agent policy or create a new one. Fleet can generate a new enrollment token if you create a new policy.
-   
-   - Ensure "Enroll in Fleet" is selected.
+**Generating Visualization:**
+To generate a sample visualization, follow these steps:
+1. Run the following commands:
+   ```
+   ./bin/adm stat -a tests/examples/oauth/access-tokens.adm
+   ./bin/adm graph tests/examples/oauth/access-tokens.adm
+   ```
+2. Use Graphviz to generate a PNG visualization file (e.g., "foo.png"):
+   ```
+   dot -T png -o foo.png graphviz.dot
+   ```
 
-**Step 3: Download and Install Elastic Agent**
+**Conclusion:**
+Congratulations! You've successfully installed and validated the "Attack-Defense Modeling CLI Tool" by Vinay Venkatesh. This versatile tool can help you streamline threat modeling processes, correlate attacks and defenses, and visualize complex models. Explore its features and integrate it into your cybersecurity toolkit for enhanced threat analysis and defense planning.
 
-   - Now, download, install, and enroll the Elastic Agent on your EC2 instance. Below are sample commands for different host operating systems:
-
-     ```
-     # For Linux (AMD)
-     wget https://artifacts.elastic.co/downloads/beats/elastic-agent/elastic-agent-<version>-amd64.deb
-     sudo dpkg -i elastic-agent-<version>-amd64.deb
-     ```
-
-     Make sure to replace `<version>` with the appropriate Elastic Agent version.
-
-   - If enrolling in a Fleet Server with your organization's certificate, add the `--certificate-authorities` option to the command as per the in-product instructions.
-
-**Step 4: Verification**
-   
-   - Confirm that Elastic Agent is installed and running by checking the Agents tab in Fleet.
-
-That's it! You've successfully installed an Elastic Fleet-managed Elastic Agent on your AWS EC2 instance, and it's now ready to collect data for your threat hunting endeavors.
-
-Stay tuned for more cybersecurity insights in "The Threat Hunter's Odyssey." Remember to like, subscribe, and share to stay updated with our journey into the world of threat detection and cybersecurity.
+To download the ADM CLI Tool, visit the [GitHub repository](https://github.com/vinayprograms/adm/tree/main). Start leveraging its capabilities to bolster your security efforts today!
 
 ## My Videos
 
